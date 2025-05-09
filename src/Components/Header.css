@@ -1,0 +1,30 @@
+/* Header.css */
+.search-wrapper {
+    width: 600px; /* Medium size, initial width */
+    transition: width 0.4s ease;
+  }
+  
+  .search-wrapper input:focus {
+    width: 600px; /* Expands to 350px when focused */
+  }
+  
+  .search-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Icon position inside the input */
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .search-wrapper input:focus ~ i {
+    left: 5px; /* Moves icon left when focused */
+  }
+  
+  .search-input {
+    padding-left: 30px; /* Space for the icon */
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    padding: 10px 16px; /* Medium size padding for the input */
+  }
+  
